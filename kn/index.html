@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varun Ghat Ravikumar</title>
-    <link rel="icon" type="image/x-icon" href="images/port.ico">
+    <link rel="icon" type="image/x-icon" href="../images/port.ico">
     <style>
         body {
             margin: 0;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #29494c;
-            background-image: url('images/bg.jpg');
+            background-image: url('../images/bg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -110,56 +110,54 @@
         <div class="navbar">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="data/resume_website.pdf">Resume</a>
+            <a href="../data/resume_website.pdf">ರೆಸ್ಯೂಮೇ</a>
             <a href="#art">Art</a>
             <a href="#other">Other</a>
             <div style="margin-left:auto;"></div>
             <select id="language-selector" style="padding:6px 12px; border-radius:4px; border:1px solid #444; background:#222; color:#fff; font-size:16px; font-family:'Courier New', Courier, monospace;">
-                <option value="index.html">English</option>
-                <option value="kn/index.html">ಕನ್ನಡ</option>
-                <option value="de/index.html">Deutsch</option>
+                <option value="../index.html">English</option>
+                <option value="index.html">ಕನ್ನಡ</option>
+                <option value="../de/index.html">Deutsch</option>
             </select>
-
-            <script>
-                const selector = document.getElementById('language-selector');
-                // Set the selected option based on current page
-                const langMap = {
-                    '../index.html': 0,
-                    'index.html': 1,
-                    '../de/index.html': 2
-                };
-                // Get current file name (last part of path)
-                let currentPath = window.location.pathname.replace(/\\/g, '/');
-                let selectedIdx = 1; // Default to Kannada
-                if (currentPath.endsWith('/index.html') || currentPath.endsWith('index.html')) {
-                    if (currentPath.includes('/kn/')) selectedIdx = 1;
-                    else if (currentPath.includes('/de/')) selectedIdx = 2;
-                    else selectedIdx = 0;
-                }
-                selector.selectedIndex = selectedIdx;
-
-                selector.addEventListener('change', () => {
-                    const selectedPage = selector.value;
-                    window.location.href = selectedPage;
-                });
-            </script>
-
         </div>
 
+        <script>
+            const selector = document.getElementById('language-selector');
+            // Set the selected option based on current page
+            const langMap = {
+                '../index.html': 0,
+                'index.html': 1,
+                '../de/index.html': 2
+            };
+            // Get current file name (last part of path)
+            let currentPath = window.location.pathname.replace(/\\/g, '/');
+            let selectedIdx = 1; // Default to Kannada
+            if (currentPath.endsWith('/index.html') || currentPath.endsWith('index.html')) {
+                if (currentPath.includes('/kn/')) selectedIdx = 1;
+                else if (currentPath.includes('/de/')) selectedIdx = 2;
+                else selectedIdx = 0;
+            }
+            selector.selectedIndex = selectedIdx;
+
+            selector.addEventListener('change', () => {
+                const selectedPage = selector.value;
+                window.location.href = selectedPage;
+            });
+        </script>
         </nav>
         <div class="container">
         <section class="profile-section" id="about">
-            <img src="images/photo.jpg" alt="Profile Picture" class="profile-pic">
+            <img src="../images/photo.jpg" alt="Profile Picture" class="profile-pic">
             <div class="profile-details"  style="font-family: 'Courier New', Courier, monospace;">
             
-            <h1 style="font-size:2em; color: rgb(151, 163, 165)">ವರುಣ್ ಘಟ್ ರವಿಕುಮಾರ್</h1>
-            <h1>Varun Ghat Ravikumar</h1>
+            <h1 style="font-size:2em; color: rgb(151, 163, 165)">Varun Ghat Ravikumar</h1>
+            <h1>ವರುಣ್ ಘಟ್ ರವಿಕುಮಾರ್</h1>
             <p style="font-size: 1.2em; color: #555;">
-                AI ML Engineer with a passion for NLP, Computer Vision, and Data Science.
+                ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆ ಎಂಜಿನಿಯರ್. ಭಾಷೆಗಳನ್ನು ಕಲಿಯಲು ಹಾಗೂ ಉಳಿಸಲು ನನಗೆ ಆಸಕ್ತಿ.
             </p>
             <div style="margin-top: 18px;">
-                <a href="data/resume_website.pdf" class="resume-button" style="margin-right: 12px;">Resume</a>
-                <a href="mailto:varungr2540@gmail.com" class="resume-button">Contact</a>
+                <a href="../data/resume_website.pdf" class="resume-button" style="margin-right: 12px;">ರೆಸ್ಯೂಮೇ</a>
+                <a href="mailto:varungr2540@gmail.com" class="resume-button">ಸಂಪರ್ಕಿಸಿ</a>
             </div>
             </div>
         </section>
