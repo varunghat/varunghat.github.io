@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,11 +82,6 @@
             color: #222;
             font-size: 1.5em;
         }
-        .experience-content {
-            padding: 16px;
-            border-radius: 6px;
-            color: #444;
-        }
         .resume-button{
             display: inline-block;
             padding: 10px 24px;
@@ -108,125 +103,97 @@
     <body>
         <nav>
         <div class="navbar">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="../data/resume_website.pdf">Resume</a>
-            <a href="#other">Other</a>
+            <a href="#about">Über mich</a>
+            <a href="work.html">Arbeit</a>
+            <a href="projects.html">Projekte</a>
+            <a href="../data/resume_website.pdf">Lebenslauf</a>
+            <a href="#other">Sonstiges</a>
             <div style="margin-left:auto;"></div>
-            <select id="language-selector" style="padding:6px 12px; border-radius:4px; border:1px solid #444; background:#222; color:#fff; font-size:16px; font-family:'Courier New', Courier, monospace;">
+            <select id="language-selector" onchange="window.location.href = this.value" style="padding:6px 12px; border-radius:4px; border:1px solid #444; background:#222; color:#fff; font-size:16px; font-family:'Courier New', Courier, monospace;">
                 <option value="../index.html">English</option>
                 <option value="../kn/index.html">ಕನ್ನಡ</option>
-                <option value="index.html">Deutsch</option>
+                <option value="index.html" selected>Deutsch</option>
             </select>
-            
-
         </div>
-        <script>
-            const selector = document.getElementById('language-selector');
-            // Set the selected option based on current page
-            const langMap = {
-                '../index.html': 0,
-                'index.html': 1,
-                '../de/index.html': 2
-            };
-            // Get current file name (last part of path)
-            let currentPath = window.location.pathname.replace(/\\/g, '/');
-            let selectedIdx = 1; // Default to Kannada
-            if (currentPath.endsWith('/index.html') || currentPath.endsWith('index.html')) {
-                if (currentPath.includes('/kn/')) selectedIdx = 1;
-                else if (currentPath.includes('/de/')) selectedIdx = 2;
-                else selectedIdx = 0;
-            }
-            selector.selectedIndex = selectedIdx;
-
-            selector.addEventListener('change', () => {
-                const selectedPage = selector.value;
-                window.location.href = selectedPage;
-            });
-        </script>
         </nav>
         <div class="container">
         <section class="profile-section" id="about">
-            <img src="../images/photo.jpg" alt="Profile Picture" class="profile-pic">
+            <img src="../images/photo.jpg" alt="Profilbild" class="profile-pic">
             <div class="profile-details"  style="font-family: 'Courier New', Courier, monospace;">
-            
+
             <h1>Varun Ghat Ravikumar</h1>
             <p style="font-size: 1.2em; color: #555;">
-                AI ML Engineer mit einer Leidenschaft für NLP, Computer Vision und Data Science. 
+                AI ML Engineer mit einer Leidenschaft für NLP, Computer Vision und Data Science.
             </p>
             <div style="margin-top: 18px;">
                 <a href="../data/resume_website.pdf" class="resume-button" style="margin-right: 12px;">Lebenslauf (CV)</a>
-                <a href="mailto:varungr2540@gmail.com" class="resume-button">Kontaktieren</a>
+                <a href="mailto:varunghat.ravikumar@uzh.ch" class="resume-button" style="margin-right: 12px;">Kontaktieren</a>
+                <a href="https://github.com/varunghat" target="_blank" class="resume-button">GitHub</a>
             </div>
             </div>
         </section>
         <section id="about-me">
             <h2><b>Über mich</b></h2>
             <p>
-                Ich bin ein begeisterter AI/ML-Ingenieur mit Erfahrung in natürlicher Sprachverarbeitung, Computer Vision und Data Science. Ich genieße es, intelligente Systeme zu entwickeln, die reale Probleme lösen, und habe zu Projekten in der Wissenschaft und Industrie beigetragen. Meine Interessen umfassen generative KI, Wissensgraphen und die Entwicklung von Tools, die Daten zugänglicher und aufschlussreicher machen. Außerhalb der Arbeit genieße ich digitale Kunst und das Erkunden neuer Technologien.
+                Software-Ingenieur. Derzeit arbeite ich am <a href="https://www.isle.uzh.ch/en.html" target="_blank">Institute for the Interdisciplinary Study of Language Evolution (ISLE)</a> der <a href="https://www.uzh.ch" target="_blank">Universität Zürich</a> und erstelle unter Chundra Cathcart etymologische Datensätze. Ich arbeite eng an der Aktualisierung von PHOIBLE mit und digitalisiere in meiner Freizeit Wörterbücher und deskriptive Grammatiken. E-Mail: varunghat [dot] ravikumar [at] uzh [dot] ch.
             </p>
         </section>
-        <section id="projects">
-            <h2><b>Projekte</b></h2>
+        <section id="cv">
+            <h2><b>Kurzer Lebenslauf</b></h2>
+            <ul>
+                <li>2026: Software Engineer, ISLE, Universität Zürich (etymologische Datensätze unter Chundra Cathcart)</li>
+                <li>2026: Software Engineer, LiRI UZH (im EVOPHON-Projekt mit Steven Moran)</li>
+                <li>2026: Software-Entwickler, ISLE, Universität Zürich (Digitalisierung von Wortlisten unter John Mansfield)</li>
+                <li>2024: Wissenschaftlicher Mitarbeiter, DDIS-Gruppe, Universität Zürich</li>
+                <li>2023 – 2026: M.Sc. Informatik (KI), Universität Zürich</li>
+                <li>2023: Associate Data Scientist &amp; Praktikant, Amagi Media Labs</li>
+                <li>2022 – 2023: Praktikum, Kernel Insights</li>
+                <li>2021 – 2022: Praktikum, Indian Institute of Astrophysics</li>
+                <li>2017 – 2021: B.E. Informatik, JSS Science &amp; Technology University, Mysuru</li>
+            </ul>
+            <p><a href="work.html">Details auf der Seite „Arbeit“ &rarr;</a></p>
+        </section>
+        <section id="publications">
+            <h2><b>Publikationen &amp; Vorträge</b></h2>
             <ul>
                 <li>
-                    <b>AI chatbot to answer natural language queries on movie knowledge graph</b><br>
-                    <em>(Python, Spacy, Transformers)</em><br>
-                    Based on a Wikidata knowledge graph on movies, the chatbot was built to answer natural language queries on movies, cast, actors, genre and provide recommendations based on genre as well as similar movies.
+                    Mündlicher Vortrag (<b>Oral Presentation</b>) auf der <b>CLiC-it</b> in Palermo, Italien, zu meinem Paper „A Factorial Study of Synthetic Data Generation for Low-Resource Machine Translation using Grammar Books“.
                 </li>
                 <br>
                 <li>
-                    <b>Kannada Text Recognition in Scene Images using Two-Stage Convolutional Neural Networks</b><br>
-                    <em>(OpenCV, Tensorflow, Python) - Bachelor Thesis</em><br>
-                    Using OpenCV, Kannada language text from scene images was detected, corrected for perspective, and analysis of various classifier algorithms was performed, resulting in the development of a two stage CNN model to recognize the text. Published paper on effectiveness of different models in Kannada scene text recognition.
+                    <b>A Factorial Study of Synthetic Data Generation for Low-Resource Machine Translation using Grammar Books</b><br>
+                    <b>V. G. Ravikumar</b>, S. Ahmadi, L. Jäger, R. Sennrich<br>
+                    <em>Angenommen bei der Italian Conference on Computational Linguistics (CLiC-it) 2026.</em><br>
+                    <a href="https://doi.org/10.48550/arXiv.2607.22376" target="_blank">[DOI: 10.48550/arXiv.2607.22376]</a>
                 </li>
                 <br>
                 <li>
-                    <b>Bioacoustics soundscape visualization tool </b><br>
-                    <em>(Python, Plotly, Librosa)</em><br>
-                    Developed a tool to visualize bioacoustics soundscapes using Python and Plotly. The tool processes audio files, extracts features, and generates interactive visualizations to analyze sound patterns in ecological data.
-                    Won the BioDivX hackathon held by GainForest and ETH AI center for best visualization.
+                    <b>Alan's Speakeasy - An Ecosystem for the Evaluation of Conversational Agents</b><br>
+                    L. Rossetto, C. Sarasua, O. Inel, <b>V. G. Ravikumar</b>, et al.<br>
+                    <em>Proceedings of the ACM Web Conference 2025 (WWW '25), Companion Volume.</em><br>
+                    <a href="https://dl.acm.org/doi/10.1145/3701716.3715165" target="_blank">[DOI: 10.1145/3701716.3715165]</a>
                 </li>
             </ul>
         </section>
-        <section id="experience"></section>
-            <h2>Berufserfahrung</h2>
-            <div class="experience-content">
-                <b>University of Zurich - Research Assistant (DDIS group)</b> <em>(Python, Knowledge graphs, LLM)</em><br>
-                Apr 2024 – Dec 2024 | Zurich, Schweiz<br>
-                <ul>
-                    <li>Worked on end-to-end pipeline for knowledge graph dataset generation and augmentation</li>
-                    <li>Worked on generative AI based data augmentation in text and images</li>
-                </ul>
-                <b>Amagi Media Labs - Associate Data Scientist</b> <em>(Python, Video processing, NLP, Pytorch)</em><br>
-                Apr 2023 – Aug 2023<br>
-                <ul>
-                    <li>Worked on sports highlight detection in football using pytorch</li>
-                    <li>Performed in-depth research in action recognition and built a proof of concept AI model</li>
-                    <li>Worked on genre classification using multi-modal features</li>
-                </ul>
-                <b>Amagi Media Labs - Internship</b> <em>(Python, Pytorch)</em><br>
-                Jan 2023 – Apr 2023<br>
-                <ul>
-                    <li>Worked with the data science team in video processing (automated shot and scene detection)</li>
-                    <li>Worked on metrics to detect model drift in shot detection</li>
-                    <li>Started project on activity recognition in sports</li>
-                </ul>
-                <b>Kernel Insights - Internship</b> <em>(Stable diffusion (GenAI), Pytorch)</em><br>
-                Nov 2022 – Jan 2023<br>
-                <ul>
-                    <li>Project on AI driven image generation using stable diffusion</li>
-                    <li>Fine-tuning stable diffusion to generate consistent compositions, subjects and poses</li>
-                    <li>Understanding transformers and diffusion models to perform semantic segmentation</li>
-                </ul>
-                <b>Indian Institute of Astrophysics - Internship</b> <em>(C++, C, MPI, PLUTO code)</em><br>
-                Sep 2021 – May 2022<br>
-                <ul>
-                    <li>Project on data-driven magnetohydrodynamics simulations in solar active regions</li>
-                    <li>Studied CME and flare formation under Dr. Vemareddy Panditi</li>
-                    <li>Migrated modules from PENCIL code to PLUTO. Wrote and modified several modules in C, C++ (MPI) and python to expedite simulation setup time and follow current research</li>
-                </ul>
-            </div>
+        <section id="showcase">
+            <h2><b>Showcase</b></h2>
+            <ul>
+                <li>
+                    <b>Maschinelle Übersetzung für ressourcenarme Sprachen mit synthetischen Daten aus Grammatikbüchern</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    Masterarbeit: über 190.000 synthetische Übersetzungspaare aus Grammatikbüchern, 96 Fine-Tuning-Setups.
+                </li>
+                <br>
+                <li>
+                    <b>KI-Dashboard zur Datenanalyse</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    Analyse-Chatbot mit natürlicher Sprache für Caritas (Hack4Good).
+                </li>
+                <br>
+                <li>
+                    <b>VLM-basierter Inventarmanager</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    Aus Bildern von Haushaltsgegenständen wird eine durchsuchbare Datenbank.
+                </li>
+            </ul>
+            <p><a href="projects.html">Alle Projekte ansehen &rarr;</a></p>
         </section>
     </div>
 </body>

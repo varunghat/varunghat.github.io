@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekte - Varun Ghat Ravikumar</title>
+    <link rel="icon" type="image/x-icon" href="../images/port.ico">
+    <style>
+        body {
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #29494c;
+            background-image: url('../images/bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        nav {
+            background-color: #222;
+            padding: 0 20px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 24px;
+            font-size: 20px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #f3fffe;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #222;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html#about">Über mich</a>
+            <a href="work.html">Arbeit</a>
+            <a href="projects.html">Projekte</a>
+            <a href="../data/resume_website.pdf">Lebenslauf</a>
+            <a href="index.html#other">Sonstiges</a>
+            <div style="margin-left:auto;"></div>
+            <select id="language-selector" onchange="window.location.href = this.value" style="padding:6px 12px; border-radius:4px; border:1px solid #444; background:#222; color:#fff; font-size:16px; font-family:'Courier New', Courier, monospace;">
+                <option value="../projects.html">English</option>
+                <option value="../kn/projects.html">ಕನ್ನಡ</option>
+                <option value="projects.html" selected>Deutsch</option>
+            </select>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="projects">
+            <h2><b>Projekte</b></h2>
+            <ul>
+                <li>
+                    <b>Maschinelle Übersetzung für ressourcenarme Sprachen mit synthetischen Daten aus Grammatikbüchern</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(LLMs, Python, GCP Vertex AI) - Masterarbeit</em><br>
+                    Entwurf einer automatisierten OCR- und NLP-Pipeline zur Extraktion linguistischer Regeln aus Grammatikbuch-PDFs. Über 190.000 synthetische Übersetzungspaare mit Gemini erzeugt. LLMs auf GCP Vertex AI feinabgestimmt und 96 Experiment-Setups ausgewertet, die die Zero-Shot-Baselines übertrafen.
+                </li>
+                <br>
+                <li>
+                    <b>KI-Dashboard zur Datenanalyse</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(LLMs, PostgreSQL, React) - Hack4Good &amp; Caritas</em><br>
+                    Entwicklung eines internen Analyse-Tools (Chatbot), mit dem Mitarbeitende ohne technischen Hintergrund CSV-/Excel-Daten per natürlichsprachlicher Anfrage visualisieren und analysieren können. Das Backend nutzt LLMs und Retrieval-Augmented Generation (RAG), um die Dateninterpretation zu automatisieren.
+                </li>
+                <br>
+                <li>
+                    <b>VLM-basierter Inventarmanager</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(Vision Language Models) - In Arbeit</em><br>
+                    Entwicklung eines multimodalen Indexierungssystems, das VLMs und Segmentierungsmodelle nutzt, um Rohbilder von Haushaltsgegenständen in strukturierte, durchsuchbare Datenbanken zu überführen.
+                </li>
+                <br>
+                <li>
+                    <b>Minecraft-Projekt</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(Details folgen)</em>
+                </li>
+                <br>
+                <li>
+                    <b>Forschungsprojekt zu Diffusionsmodellen</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(PyTorch) - Masterprojekt</em><br>
+                    Untersuchung der Funktionsweise von Diffusionsmodellen mit Standard-Diffusion und „Cold Diffusion“. Implementierung eines Cold-Latent-Diffusion-Modells, um Lernmuster über verschiedene Architekturen hinweg zu analysieren und zu vergleichen.
+                </li>
+                <br>
+                <li>
+                    <b>Tool zur Visualisierung bioakustischer Klanglandschaften</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(Python, Plotly, Librosa)</em><br>
+                    Entwicklung eines Tools, das Audiodateien verarbeitet und interaktive Visualisierungen zur Analyse von Klangmustern in ökologischen Daten erzeugt.
+                    <b>Gewinner des BioDivX-Hackathons</b> (GainForest &amp; ETH AI Center) für die beste Visualisierung.
+                </li>
+                <br>
+                <li>
+                    <b>Erkennung von Kannada-Text in Szenenbildern mit zweistufigen CNNs</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(OpenCV, Tensorflow, Python) - Bachelorarbeit</em><br>
+                    Kannada-Text aus Szenenbildern erkannt und perspektivisch korrigiert. Entwicklung eines zweistufigen CNN-Modells und Veröffentlichung eines Papers zur Wirksamkeit verschiedener Modelle bei der Kannada-Texterkennung in Szenenbildern.
+                </li>
+                <br>
+                <li>
+                    <b>KI-Chatbot für Film-Wissensgraphen</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(Python, Spacy, Transformers)</em><br>
+                    Entwicklung eines Chatbots auf Basis eines Wikidata-Wissensgraphen, der natürlichsprachliche Fragen zu Besetzung, Genre und Schauspielern beantwortet und anhand der Graphähnlichkeit passende Empfehlungen gibt.
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

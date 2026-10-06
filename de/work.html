@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbeit - Varun Ghat Ravikumar</title>
+    <link rel="icon" type="image/x-icon" href="../images/port.ico">
+    <style>
+        body {
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #29494c;
+            background-image: url('../images/bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        nav {
+            background-color: #222;
+            padding: 0 20px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 24px;
+            font-size: 20px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #f3fffe;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #222;
+            font-size: 1.5em;
+        }
+        .experience-content {
+            padding: 16px;
+            border-radius: 6px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html#about">Über mich</a>
+            <a href="work.html">Arbeit</a>
+            <a href="projects.html">Projekte</a>
+            <a href="../data/resume_website.pdf">Lebenslauf</a>
+            <a href="index.html#other">Sonstiges</a>
+            <div style="margin-left:auto;"></div>
+            <select id="language-selector" onchange="window.location.href = this.value" style="padding:6px 12px; border-radius:4px; border:1px solid #444; background:#222; color:#fff; font-size:16px; font-family:'Courier New', Courier, monospace;">
+                <option value="../work.html">English</option>
+                <option value="../kn/work.html">ಕನ್ನಡ</option>
+                <option value="work.html" selected>Deutsch</option>
+            </select>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="experience">
+            <h2>Berufserfahrung</h2>
+            <div class="experience-content">
+                <b>Software Engineer - <a href="https://www.unine.ch" target="_blank">UNINE</a>, Gast am <a href="https://www.liri.uzh.ch/en.html" target="_blank">LiRI UZH</a></b> <em>(Python, R)</em><br>
+                Jul 2026 – heute | Zürich, Schweiz<br>
+                <ul>
+                    <li>Mitarbeit am EVOPHON-Projekt: umfassende Aktualisierung von PHOIBLE (sprachübergreifende Datenbank phonetischer Inventare)</li>
+                    <li>Arbeit an MRT-basierten Modellen zur Erkennung von Mund- und Artikulator-Landmarken für die Erforschung der phonetischen Artikulation</li>
+                </ul>
+
+                <b><a href="https://www.uzh.ch" target="_blank">Universität Zürich</a> - Software-Entwickler (<a href="https://www.isle.uzh.ch/en.html" target="_blank">ISLE</a>)</b> <em>(Python, LLM, OCR, GCP)</em><br>
+                Feb 2026 – Jun 2026 | Zürich, Schweiz<br>
+                <ul>
+                    <li>Zunächst projektbasiert angestellt; im Mai 2026 auf eine 70%-Stelle aufgestockt</li>
+                    <li>Entwurf einer LLM-gesteuerten OCR-Pipeline zur automatisierten Datenextraktion und -aufbereitung für verschiedene Wortlisten-Bücher im PDF-Format</li>
+                    <li>Training von Modellen zur semantischen Wortklassifikation und zur diakritikspezifischen OCR; Entwicklung von Werkzeugen für Annotation und Verifikation</li>
+                    <li>Regelmässige Beiträge zu Forschungsdiskussionen und Gruppensitzungen der Linguistik</li>
+                    <li>Weiterarbeit auf freiwilliger Basis (Jun – heute): Betreuung der GCP-Infrastruktur, Unterstützung bei der Datenextraktion und Mitarbeit an Forschung zu abstrakten Konzepten und Kolexifikation</li>
+                </ul>
+
+                <b>Universität Zürich - Wissenschaftlicher Mitarbeiter (DDIS-Gruppe)</b> <em>(Python, Wissensgraphen, LLM, GenAI)</em><br>
+                Apr 2024 – Dez 2024 | Zürich, Schweiz<br>
+                <ul>
+                    <li>Entwicklung einer End-to-End-Pipeline zur Erzeugung und Erweiterung synthetischer Wissensgraph-Datensätze</li>
+                    <li>Optimierung der Datenaufnahme für über 100 Millionen Entitäten</li>
+                    <li>Synthetische Datenaugmentation für Text und Bilder mittels GenAI</li>
+                </ul>
+
+                <b>Amagi Media Labs - Associate Data Scientist &amp; Praktikant</b> <em>(Python, Videoverarbeitung, NLP, PyTorch, AWS)</em><br>
+                Jan 2023 – Aug 2023 | Bangalore, Indien<br>
+                <ul>
+                    <li>Innerhalb von 3 Monaten vom Praktikanten zum Vollzeit-Data-Scientist befördert</li>
+                    <li>Entwicklung eines Proof of Concept zur Erkennung von Highlights in Fussballvideos mit 6-facher Echtzeitgeschwindigkeit</li>
+                    <li>Einsatz eines multimodalen Genre-Klassifikationsmodells in einer Live-Produktionsumgebung</li>
+                    <li>Verbesserung der Produktions-Pipelines durch Metriken zur Erkennung von Model Drift</li>
+                </ul>
+
+                <b>Kernel Insights - Praktikum</b> <em>(Stable Diffusion (GenAI), PyTorch)</em><br>
+                Nov 2022 – Jan 2023 | Bangalore, Indien<br>
+                <ul>
+                    <li>Fine-Tuning von Stable Diffusion für einheitliche Bilderbuch-Stilisierung</li>
+                    <li>Untersuchung von Latent-Seed-Strategien zur Steuerung von Posen der Figuren</li>
+                </ul>
+
+                <b>Indian Institute of Astrophysics - Praktikum</b> <em>(C++, C, MPI, PLUTO code)</em><br>
+                Sep 2021 – Mai 2022 | Bangalore, Indien<br>
+                <ul>
+                    <li>Migration von C++/MPI-Modulen zu PLUTO für datengetriebene MHD-Simulationen solarer Flares</li>
+                    <li>Untersuchung der CME-Entstehung durch computergestützte Hochleistungsmodellierung</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
