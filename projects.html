@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Varun Ghat Ravikumar</title>
+    <link rel="icon" type="image/x-icon" href="images/port.ico">
+    <style>
+        body {
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #29494c;
+            background-image: url('images/bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        nav {
+            background-color: #222;
+            padding: 0 20px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 24px;
+            font-size: 20px;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #f3fffe;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #222;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html#about">About</a>
+            <a href="work.html">Work</a>
+            <a href="projects.html">Projects</a>
+            <a href="data/resume_website.pdf">Resume</a>
+            <a href="index.html#art">Art</a>
+            <a href="index.html#other">Other</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="projects">
+            <h2><b>Projects</b></h2>
+            <ul>
+                <li>
+                    <b>Low-Resource Language Translation using Synthetic Data from Grammar Books</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(LLMs, Python, GCP Vertex AI) - Master's Thesis</em><br>
+                    Designed an automated OCR + NLP pipeline to extract linguistic rules from grammar book PDFs. Generated 190k+ synthetic translation pairs via Gemini. Fine-tuned LLMs on GCP Vertex AI and evaluated 96 experimental setups, outperforming zero-shot baselines.
+                </li>
+                <br>
+                <li>
+                    <b>AI Data Analysis Dashboard</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(LLMs, PostgreSQL, React) - Hack4Good & Caritas</em><br>
+                    Developed an internal analytics tool (chatbot) allowing non-technical employees to visualize and analyze CSV/Excel data via natural language queries. Architected the backend utilizing LLMs and Retrieval-Augmented Generation (RAG) to automate data interpretation.
+                </li>
+                <br>
+                <li>
+                    <b>VLM-based Inventory Manager</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(Vision Language Models) - Ongoing</em><br>
+                    Developing a multi-modal indexing system that leverages VLMs and segmentation models to transform raw images of household objects into structured, searchable databases.
+                </li>
+                <br>
+                <li>
+                    <b>Minecraft Project</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(Details coming soon)</em>
+                </li>
+                <br>
+                <li>
+                    <b>Diffusion Models Research Project</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(PyTorch) - Master Project</em><br>
+                    Explored the inner workings of diffusion models by experimenting with standard diffusion and "cold diffusion." Implemented a cold latent diffusion model to analyze and compare learning patterns across different architectural setups.
+                </li>
+                <br>
+                <li>
+                    <b>Bioacoustics Soundscape Visualization Tool</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(Python, Plotly, Librosa)</em><br>
+                    Developed a tool to process audio files and generate interactive visualizations to analyze sound patterns in ecological data.
+                    <b>Won the BioDivX hackathon</b> (GainForest & ETH AI Center) for best visualization.
+                </li>
+                <br>
+                <li>
+                    <b>Kannada Text Recognition in Scene Images using Two-Stage CNNs</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(OpenCV, Tensorflow, Python) - Bachelor Thesis</em><br>
+                    Detected and perspective-corrected Kannada text from scene images. Developed a two-stage CNN model and published a paper on the effectiveness of different models in Kannada scene text recognition.
+                </li>
+                <br>
+                <li>
+                    <b>AI Chatbot for Movie Knowledge Graphs</b> <a href="#" target="_blank">[GitHub]</a><br>
+                    <em>(Python, Spacy, Transformers)</em><br>
+                    Built a chatbot based on a Wikidata knowledge graph to answer natural language queries regarding cast, genre, and actors, providing tailored recommendations based on graph similarity.
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
