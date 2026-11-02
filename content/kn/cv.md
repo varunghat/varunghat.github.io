@@ -12,6 +12,4 @@
 - 2021 – 2022: Internship, Indian Institute of Astrophysics
 - 2017 – 2021: B.E. Computer Science & Engineering, JSS Science & Technology University, Mysuru
 
-[Details on the Work page →](work.html)
-
 [Full resume (PDF)](data/resume_website.pdf) *(Updated Nov 2026)*

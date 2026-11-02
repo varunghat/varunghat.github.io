@@ -57,7 +57,6 @@ function renderNav(lang) {
     document.getElementById('nav').innerHTML = `
         <div class="navbar">
             <a href="index.html#about">${t.about}</a>
-            <a href="work.html">${t.work}</a>
             <a href="projects.html">${t.projects}</a>
             <a href="${LINKS.resume}">${t.resume}</a>
             <div class="spacer"></div>
@@ -88,7 +87,7 @@ async function renderSections(lang, scrollToHash) {
     const host = document.getElementById('sections');
     const files = host.dataset.files.split(',');
     const parts = await Promise.all(files.map(async f => {
-        const res = await fetch(`content/${lang}/${f}.md`);
+        const res = await fetch(`content/${lang}/${f}.md`, { cache: 'no-cache' });
         if (!res.ok) throw new Error(`${f}.md: ${res.status}`);
         return `<section id="${f}">${marked.parse(await res.text())}</section>`;
     }));

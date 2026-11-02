@@ -10,6 +10,4 @@
 - 2021 – 2022: Praktikum, Indian Institute of Astrophysics
 - 2017 – 2021: B.E. Informatik, JSS Science & Technology University, Mysuru
 
-[Details auf der Seite „Arbeit“ →](work.html)
-
 [Vollständiger Lebenslauf (PDF)](data/resume_website.pdf) *(Aktualisiert Nov. 2026)*
